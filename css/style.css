@@ -1,0 +1,159 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    /* Set the background color to black */
+    color: white;
+    /* Set the default text color to white */
+}
+
+/* Basic styling for header */
+header {
+    background-color: #2ecc71;
+    /* Set the header background color to emerald */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    /* Add some padding for better clickability */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    /* Add a subtle hover effect */
+}
+
+/* Add more styling as needed */
+/* Add the following styles for the footer */
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 50px; /* Adjust the size of the logo as needed */
+}
+
+.footer-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.footer-links li {
+    margin-right: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact p {
+    margin: 0;
+}
+
+.pfp {
+    width: 150px;
+    /* Set the desired width */
+    height: 150px;
+    /* Set the desired height */
+    border-radius: 50%;
+    /* Make it circular */
+    overflow: hidden;
+    /* Ensure the image stays within the circular border */
+}
+
+.pfp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ensure the image covers the circular container */
+    object-position: center top;
+    /* Adjust the placement (center horizontally, align to the top vertically) */
+}
+
+#blockkointeam {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+#blockkointeam img {
+
+    position: absolute;
+    left: 20%;
+    top: -150px;
+    width: 600px;
+    /* Set the desired width */
+    height: 1000px;
+    /* Set the desired height */
+    clip-path: inset(25% 0 25% 0);
+    /* Crop 25% from the left */
+    overflow: hidden;
+    filter: brightness(50%);
+}
+
+#blockkointeam img:hover{
+    filter: none
+}
+#malawi {
+    position: absolute;
+    left: 20%;
+    top: 15%;
+}
+
+#malawi img {
+    filter: brightness(50%);
+    width: 500px;
+    /* Set the desired width */
+    height: 600px;
+    
+}
+
+#malawi img:hover{
+    filter: none
+}
