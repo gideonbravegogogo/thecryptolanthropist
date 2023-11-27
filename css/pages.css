@@ -1,0 +1,78 @@
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden; /* Hide overflow content */
+}
+
+.page {
+    height: 297mm; /* A4 height in millimeters */
+    padding: 20px;
+    background-color: #ffffff0e; /* Paper color */
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc; /* Add a border between pages */
+}
+
+.page-columns {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+}
+
+.ad {
+    background-color: #f0f0f049;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+/* Center the main content */
+.center-column {
+    margin: 0 auto;
+}
+
+/* Position the left ad to the left of the page */
+.ad.left {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Position the right ad to the right of the page */
+.ad.right {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Content Element Styles */
+
+.content-article,
+.content-paragraph,
+.content-video,
+.content-image {
+    background-color: #fefefe25;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.content-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Placeholder Styles */
+
+.content-placeholder {
+    border: 2px solid #ff0000; /* Red border for the placeholder */
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}

@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Blog - Cryptolanthropy</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CWE: cnsrvd work & energy </title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/sandbox.css'>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
+    <div id="content">
+        <div id="player"></div>
+        <canvas id="myCanvas"></canvas>
+        <div id="GUI">
+            <button class="menu-button" style="top: 100px;" onclick="mainMenu(1)">Resume Game</button>
+            <button class="menu-button" style="top: 150px;">New Game</button>
+            <button class="menu-button" style="top: 200px; z-index: 1;">Load Game</button>
+            <button class="menu-button" style="top: 250px; z-index: 1;">Multiplayer</button>
+            <button class="menu-button" style="top: 300px; z-index: 1;" onclick="showOptionsModal()">Options</button>
+            <button class="menu-button" style="top: 350px; z-index: 1;">Credits</button>
+            <button class="menu-button" style="top: 400px; z-index: 1;" onclick="quit()">Quit</button>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="cryptolanthropy.html">Cryptolanthropy</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Blog Section -->
-    <section class="blog">
-        <!-- Add your blog content here -->
-        <h1>Blog</h1>
-        <p>Read our latest stories of impact and stay updated on our philanthropic initiatives.</p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-logo">
-                <img src="assets/img/blockchainteam.jpeg" alt="Blockcoin Logo">
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="cryptolanthropy.html">Cryptolanthropy</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                <p>Contact us: contact@cryptolanthropy.com</p>
-            </div>
-        </div>
-    </footer>
-
+        <script src="./js/youtube.js"></script>
+        <script src='./js/utils.js'></script>
+        <script src='./js/shapes.js'></script>
+        <script src="./js/scrollbars.js"></script>
+        <script src="./js/mainmenu.js"></script>
+        <script src='./js/index.js'></script>
+        <!--<script src="pan.js"></script>-->
+    </div>
 </body>
 
 </html>
