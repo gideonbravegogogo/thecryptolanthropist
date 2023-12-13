@@ -2,6 +2,7 @@ body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
   background-color: #ffffff;
+  text-shadow: black 2px 2px 4px;
 }
 
 .layout_padding {
